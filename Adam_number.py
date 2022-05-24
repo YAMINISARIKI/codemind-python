@@ -1,13 +1,13 @@
-def rev(n):
-    sum=0
-    while n>0:
-        rem=n%10
-        sum=sum*10+rem
-        n=n//10
-    return sum
-n=int(input())
-sqrev=rev(n)
-if n**2==rev(sqrev**2):
+def rev(a):
+    su=0
+    while a>0:
+        rem=a%10
+        su=su*10+rem
+        a=a//10
+    return su
+a=int(input())
+res=rev(a)
+if a**2==rev(res**2):
     print("True")
 else:
     print("False")
