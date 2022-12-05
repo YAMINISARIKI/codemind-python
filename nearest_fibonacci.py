@@ -5,9 +5,9 @@ for i in range(2,n):
     c=a+b
     a=b
     b=c
-    if c<n:
+    if(c<n):
         x=c
-    if c>n:
+    if(c>n):
         y=c
         break
 if abs(x-n)<abs(y-n):
