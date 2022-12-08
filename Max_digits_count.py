@@ -1,10 +1,13 @@
 n=int(input())
 a=list(map(int,input().split()))
-c=max(a)
-c=str(c)
-d=len(c)
-x=0
+c=0
+max=0
 for i in a:
-    if len(str(i))==d:
-        x+=1
-print(x)
+    i=str(i)
+    l=len(i)
+    if(l>=max):
+        max=l
+for i in a:
+    if len(str(i))==max:
+        c+=1
+print(c)
