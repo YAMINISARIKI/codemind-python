@@ -1,15 +1,12 @@
-n=input()
-n=n.lower()
-n.split()
-n=set(n)
-m=input()
-m=m.lower()
-m.split()
-m=set(m)
-c=0
-for i in n:
+a=input()
+a=a.lower()
+a=set(a)
+b=input()
+b=b.lower()
+b=set(b)
+s=0
+for i in a:
     if i!=" ":
-        for j in m:
-            if i==j:
-                c+=1
-print(c)
+        if i in b:
+            s=s+1
+print(s)
