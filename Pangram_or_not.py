@@ -1,11 +1,11 @@
-s=input()
-s=s.lower()
-d=""
-for i in s:
-    if i in "abcdefghijklmnopqrsruvwxyz":
-        if i not in d:
-            d=d+i
-if len(d)==25:
+a=input()
+a=a.lower()
+a=set(a)
+c=0
+for i in a:
+    if i in "abcdefghijklmnopqrstuvwxyz":
+        c+=1
+if c==26:
     print("True")
 else:
     print("False")
